@@ -1,0 +1,158 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+  --color-white: #fafafa;
+
+  /* SPACING */
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1000: 80px;
+  --spacing-1400: 112px;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-display: normal;
+}
+
+.btn {
+  padding: var(--spacing-200) var(--spacing-500);
+  border: none;
+  border-radius: 29px;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--color-purple-600);
+}
+
+.container {
+  min-width: 375px;
+  max-width: 1120px;
+
+  margin: 0 auto;
+  padding: 0 var(--spacing-400);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* TEXT-PRESETS */
+.desktop-text-preset-1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-feature-settings: "liga" off, "clig" off;
+
+  color: var(--color-slate-900);
+}
+
+.mobile-text-preset-1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%;
+  color: var(--color-slate-900);
+}
+
+.desktop-text-preset-2 {
+  font-size: 2.5rem;
+  line-height: 110%;
+  letter-spacing: 0px;
+  color: var(--color-slate-900);
+}
+
+.desktop-text-preset-3 {
+  font-size: 1rem;
+  line-height: 110%;
+  letter-spacing: 4px;
+}
+
+.desktop-text-preset-4 {
+  font-size: 1.125rem;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+
+.tablet-text-preset-4 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-slate-600);
+}
+
+.desktop-text-preset-5 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--color-white);
+}
+
+/* HEADER */
+.header .container {
+  padding: 0;
+  padding-top: var(--spacing-1000);
+  justify-content: center;
+  width: fit-content;
+}
+
+.header__logo {
+  max-width: 118px;
+  height: 28px;
+}
+
+/* HERO */
+.hero {
+  padding-top: 3rem;
+}
+
+.hero__content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+
+.page-title {
+  text-align: center;
+}
+
+.hero__content .btn-wrapper {
+  flex-direction: column;
+  gap: var(--spacing-200);
+  align-items: center;
+}
+
+.btn-main {
+  background-color: var(--color-cyan-600);
+  gap: var(--spacing-50);
+}
+
+.btn-main .text-accent {
+color: var(--color-cyan-300);
+}
